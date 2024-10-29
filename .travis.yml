@@ -72,9 +72,7 @@ import: mariadb-corporation/connector-test-machine:common-build.yml@master
 jobs:
   include:
     - stage: Language
-      env: srv=mariadb v=10.11 local=1 PYTHON_VER="3.8"
-      name: "Python 3.8"
-    - env: srv=mariadb v=10.11 local=1 PYTHON_VER="3.9"
+      env: srv=mariadb v=10.11 local=1 PYTHON_VER="3.9"
       name: "Python 3.9"
     - env: srv=mariadb v=10.11 local=1 PYTHON_VER="3.10"
       name: "Python 3.10"
@@ -82,6 +80,8 @@ jobs:
       name: "Python 3.11"
     - env: srv=mariadb v=10.11 local=1 PYTHON_VER="3.12"
       name: "Python 3.12"
+    - env: srv=mariadb v=10.11 local=1 PYTHON_VER="3.13"
+      name: "Python 3.13"
 
 script:
   - python --version
