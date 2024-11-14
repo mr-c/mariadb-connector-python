@@ -137,6 +137,9 @@ Connection attributes
 
 .. autoattribute:: mariadb.connections.Connection.tls_version
 
+.. versionadded:: 1.1.11
+.. autoattribute:: mariadb.connections.Connection.tls_peer_cert_info
+
 .. autoattribute:: mariadb.connections.Connection.unix_socket
 
 .. autoattribute:: mariadb.connections.Connection.user

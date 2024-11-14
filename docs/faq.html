@@ -3,21 +3,21 @@
 <html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>MariaDB Connector/Python FAQ &#8212; MariaDB Connector/Python 1.2.0.a1-a documentation</title>
+    <title>MariaDB Connector/Python FAQ &#8212; MariaDB Connector/Python 1.1.11 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=514cf933" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
     
-    <script src="_static/documentation_options.js?v=09bbb30e"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/documentation_options.js?v=81c0ceb3"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Bug reports" href="bugs.html" /> 
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -29,7 +29,7 @@
         <li class="right" >
           <a href="bugs.html" title="Bug reports"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">MariaDB Connector/Python 1.2.0.a1-a documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">MariaDB Connector/Python 1.1.11 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">MariaDB Connector/Python FAQ</a></li> 
       </ul>
     </div>  
@@ -75,7 +75,7 @@ Use your package manager to install them system-wide:</p>
 </details><p>Note: The python3 development packages of your distribution might not cover all minor versions
 of python3. If you are using python3.10 you may need install python3.10-dev.</p>
 </details><details class="summary-modulenotfounderror-no-module-named-packaging">
-<summary>ModuleNotFoundError: No module named 'packaging'</summary><p>With deprecation of distutils (see <a class="reference external" href="https://peps.python.org/pep-632">PEP-632</a>) version functions of distutils module were
+<summary>ModuleNotFoundError: No module named 'packaging'</summary><p>With deprecation of distutils (see <a class="extlink-PEP reference external" href="https://peps.python.org/pep-632">PEP-632</a>) version functions of distutils module were
 replaced in MariaDB Connector/Python 1.1.5 by packaging version functions.</p>
 <p>Before you can install MariaDB Connector/Python you have to install the packaging module:</p>
 <blockquote>
@@ -198,7 +198,7 @@ be obtained by cursor.statement attribute</p>
 </div>
 <p>Please note, that there is no need to escape ‘%s’ by ‘%%s’ for the time conversion in DATE_FORMAT() function.</p>
 </details><details class="summary-q-does-mariadb-connector-python-supports-paramstyle-pyformat">
-<summary>Q: Does MariaDB Connector/Python supports paramstyle "pyformat" ?</summary><p>The default paramstyle (see <a class="reference external" href="https://peps.python.org/pep-249">PEP-249</a>) is <strong>qmark</strong> (question mark) for parameter markers. For compatibility
+<summary>Q: Does MariaDB Connector/Python supports paramstyle "pyformat" ?</summary><p>The default paramstyle (see <a class="extlink-PEP reference external" href="https://peps.python.org/pep-249">PEP-249</a>) is <strong>qmark</strong> (question mark) for parameter markers. For compatibility
 with other drivers MariaDB Connector/Python also supports (and automatically recognizes) the <strong>format</strong> and <strong>pyformat</strong> parameter
 styles.</p>
 <p>Mixing different paramstyles within the same query is not supported and will raise an exception.</p>
@@ -231,7 +231,7 @@ Uncommitted pending transactions are rolled back automatically when the connecti
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
     <h3><a href="index.html">Table of Contents</a></h3>
@@ -251,7 +251,7 @@ Uncommitted pending transactions are rolled back automatically when the connecti
     <p class="topless"><a href="bugs.html"
                           title="previous chapter">Bug reports</a></p>
   </div>
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
@@ -259,13 +259,13 @@ Uncommitted pending transactions are rolled back automatically when the connecti
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -277,13 +277,13 @@ Uncommitted pending transactions are rolled back automatically when the connecti
         <li class="right" >
           <a href="bugs.html" title="Bug reports"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">MariaDB Connector/Python 1.2.0.a1-a documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">MariaDB Connector/Python 1.1.11 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">MariaDB Connector/Python FAQ</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
     &#169; Copyright 2019-2024 MariaDB Corporation and Georg Richter.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     </div>
   </body>
 </html>
