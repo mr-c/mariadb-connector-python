@@ -8,6 +8,15 @@ Release date: Nov 14 2024
 
 **Issues fixed:**
 
+- :conpy:`283`: Incorrect result format after cursor.scroll()
+- :conpy:`289`: BIGINT out of range on bulk insert
+- :conpy:`293`: Fix gcc warnings
+
+**Notable changes:**
+- Added new connection attribute tls_peer_cert_info
+- Added support for MariaDB Connector/C 3.4
+
+
 
 MariaDB Connector/Python 1.1.10
 -------------------------------
@@ -16,13 +25,10 @@ Release date: Feb 07 2024
 
 **Issues fixed:**
 
-- :conpy:`283`: Incorrect result format after cursor.scroll()
-- :conpy:`289`: BIGINT out of range on bulk insert
-- :conpy:`293`: Fix gcc warnings
-
-**Notable changes:**
-- Added new connection attribute tls_peer_cert_info
-- Added support for MariaDB Connector/C 3.4
+- :conpy:`273`: cursor.execute fails when running in sql_mode ANSI_QUOTES.
+- :conpy:`278`: Return updated connection_id in case of automatic reconnect
+- :conpy:`279`: Allow None values for password and database in change_user() method
+- :conpy:`281`: Use METH_O calling conventions for c functions which accept only one parameter
 
 MariaDB Connector/Python 1.1.9
 ------------------------------

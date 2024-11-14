@@ -49,11 +49,6 @@
 <h2>MariaDB Connector/Python 1.1.11<a class="headerlink" href="#mariadb-connector-python-1-1-11" title="Link to this heading">¶</a></h2>
 <p>Release date: Nov 14 2024</p>
 <p><strong>Issues fixed:</strong></p>
-</section>
-<section id="mariadb-connector-python-1-1-10">
-<h2>MariaDB Connector/Python 1.1.10<a class="headerlink" href="#mariadb-connector-python-1-1-10" title="Link to this heading">¶</a></h2>
-<p>Release date: Feb 07 2024</p>
-<p><strong>Issues fixed:</strong></p>
 <ul class="simple">
 <li><p><a class="extlink-conpy reference external" href="https://jira.mariadb.org/browse/CONPY-283">CONPY-283</a>: Incorrect result format after cursor.scroll()</p></li>
 <li><p><a class="extlink-conpy reference external" href="https://jira.mariadb.org/browse/CONPY-289">CONPY-289</a>: BIGINT out of range on bulk insert</p></li>
@@ -62,6 +57,17 @@
 <p><strong>Notable changes:</strong>
 - Added new connection attribute tls_peer_cert_info
 - Added support for MariaDB Connector/C 3.4</p>
+</section>
+<section id="mariadb-connector-python-1-1-10">
+<h2>MariaDB Connector/Python 1.1.10<a class="headerlink" href="#mariadb-connector-python-1-1-10" title="Link to this heading">¶</a></h2>
+<p>Release date: Feb 07 2024</p>
+<p><strong>Issues fixed:</strong></p>
+<ul class="simple">
+<li><p><a class="extlink-conpy reference external" href="https://jira.mariadb.org/browse/CONPY-273">CONPY-273</a>: cursor.execute fails when running in sql_mode ANSI_QUOTES.</p></li>
+<li><p><a class="extlink-conpy reference external" href="https://jira.mariadb.org/browse/CONPY-278">CONPY-278</a>: Return updated connection_id in case of automatic reconnect</p></li>
+<li><p><a class="extlink-conpy reference external" href="https://jira.mariadb.org/browse/CONPY-279">CONPY-279</a>: Allow None values for password and database in change_user() method</p></li>
+<li><p><a class="extlink-conpy reference external" href="https://jira.mariadb.org/browse/CONPY-281">CONPY-281</a>: Use METH_O calling conventions for c functions which accept only one parameter</p></li>
+</ul>
 </section>
 <section id="mariadb-connector-python-1-1-9">
 <h2>MariaDB Connector/Python 1.1.9<a class="headerlink" href="#mariadb-connector-python-1-1-9" title="Link to this heading">¶</a></h2>
